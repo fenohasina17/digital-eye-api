@@ -19,6 +19,7 @@ Route::get('/', function ()
 });
 Route::get('privacy-policy', 'HomeController@privacy')->name('privacy');
 Route::get('/upload-data', 'Client\ClientController@uploadData')->name('upload-data');
+Route::get('/upload-assigned', 'Client\ClientController@uploadDataForAssignedSchoolMDT')->name('upload-to-assigned-mdt');
 Route::get('/black-list', 'Client\ClientController@blackList')->name('black-list');
 Route::get('/clear',function(){
     Artisan::call('config:clear');

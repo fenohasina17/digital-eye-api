@@ -36,10 +36,16 @@ class ClientController extends Controller
     {
         $mdts  = Mdt::all();
         
-        $students = Student::where("upload",0)->get();
-        foreach ($students as $student) 
-		{            
-            createUserMDT($mdtURL, $student);
+        foreach($mdts as $mdt)
+        {
+            $mdtSchool = $mdt->school
+            $mdtURL = "https://$mdt->ip_address:$mdt->https_port/api/v1/face/addPerson";
+            $students = Student::where("school_name",$mdtSchool)->get();            
+
+            foreach ($students as $student) 
+            {            
+                createUserMDT($mdtURL, $student);
+            }
         }
     }
 	
