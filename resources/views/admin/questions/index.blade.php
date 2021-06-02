@@ -10,7 +10,7 @@
 											</span>
         <h3 class="card-label">Questions List</h3>
 	      <div class="d-flex align-items-center ">
-		      <a class="btn btn-danger font-weight-bolder" onclick="del_selected()" href="javascript:void(0)"> <i class="la la-trash-o"></i>Delete All</a>
+		      <a class="btn btn-danger font-weight-bolder" onclick="del_selected()" href="javascript:void(0)"> <i class="la la-trash-o"></i>Delete Selected</a>
 	      </div>
       </div>
       <div class="card-toolbar">

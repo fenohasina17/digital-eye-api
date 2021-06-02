@@ -34,6 +34,8 @@ class ClientController extends Controller
 	
 	public function uploadDataForAssignedSchoolMDT()//registers user to mdt specific to their school
     {
+        $mdts  = Mdt::all();
+        
         $students = Student::where("upload",0)->get();
         foreach ($students as $student) 
 		{            
