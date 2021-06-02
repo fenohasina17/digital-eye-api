@@ -27,7 +27,8 @@
 													</g>
 												</svg>
                         <!--end::Svg Icon-->
-											</span>New Record</a>
+											</span>New Record
+        </a>
         <!--end::Button-->
       </div>
     </div>

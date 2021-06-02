@@ -15,7 +15,7 @@
             <!--begin::Breadcrumb-->
             <ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold p-0 my-2 font-size-sm">
               <li class="breadcrumb-item text-muted">
-                <a href="" class="text-muted">Manage Mdts</a>
+                <a href="" class="text-muted">Manage MDTs</a>
               </li>
               <li class="breadcrumb-item text-muted">
                 <a href="" class="text-muted">Add Mdt</a>
