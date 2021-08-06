@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SMSController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,14 +19,18 @@ Route::get('/', function ()
     return view('auth.login');
 });
 Route::get('privacy-policy', 'HomeController@privacy')->name('privacy');
+Route::get('email-verified', 'HomeController@emailverified')->name('email-verified');
 Route::get('/upload-data', 'Client\ClientController@uploadData')->name('upload-data');
 Route::get('/upload-assigned', 'Client\ClientController@uploadDataForAssignedSchoolMDT')->name('upload-to-assigned-mdt');
 Route::get('/black-list', 'Client\ClientController@blackList')->name('black-list');
-Route::get('/clear',function(){
-    Artisan::call('config:clear');
-    Artisan::call('cache:clear');
-    Artisan::call('config:cache');
-});
+Route::get('/clear',
+	function(){
+	
+		Artisan::call('config:clear');
+		Artisan::call('cache:clear');
+		Artisan::call('config:cache');
+	}
+);
 
 Auth::routes();
 
@@ -71,11 +76,30 @@ Route::group([
 	Route::get('question/delete/{id}', 'QuestionController@destroy');
 	Route::post('delete-selected-questions', 'QuestionController@deleteSelectedClients')->name('admin.delete-selected-questions');
 
+	//schools Routes
+	Route::resource('schools','SchoolController');
+	Route::post('get-schools', 'SchoolController@getClients')->name('admin.getSchools');
+	Route::post('get-school', 'SchoolController@clientDetail')->name('admin.getSchool');
+	Route::get('school/delete/{id}', 'SchoolController@destroy');
+	Route::post('delete-selected-schools', 'SchoolController@deleteSelectedClients')->name('admin.delete-selected-schools');
+
+	//Buses Routes
+	Route::resource('buses','BussController');
+	Route::post('get-buses', 'BussController@getClients')->name('admin.getBuses');
+	Route::post('get-buss', 'BussController@clientDetail')->name('admin.getBuss');
+	Route::get('buss/delete/{id}', 'BussController@destroy');
+	Route::post('delete-selected-buses', 'BussController@deleteSelectedClients')->name('admin.delete-selected-buses');
+
 	//Mdt Routes
 	Route::resource('mdts','MdtController');
 	Route::post('get-mdts', 'MdtController@getClients')->name('admin.getMdts');
 	Route::post('get-mdt', 'MdtController@clientDetail')->name('admin.getMdt');
 	Route::get('mdt/delete/{id}', 'MdtController@destroy');
 	Route::post('delete-selected-mdts', 'MdtController@deleteSelectedClients')->name('admin.delete-selected-mdts');
+
+	//Message Route
+
+	
 });
 
+	Route::any('send-sms', 'SMSController@send');

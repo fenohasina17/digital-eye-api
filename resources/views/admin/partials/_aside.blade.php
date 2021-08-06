@@ -98,7 +98,7 @@
 
                       <!--end::Svg Icon-->
 										</span>
-                    <span class="menu-text">Manage MDTs</span>
+                    <span class="menu-text">Manage Mdts</span>
                   </a>
 
                 </li><li class="menu-section">

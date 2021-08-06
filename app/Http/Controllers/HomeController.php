@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class HomeController extends Controller
 {
@@ -33,5 +35,17 @@ class HomeController extends Controller
     public function adminHome()
     {
         return view('admin-home');
+    }
+    public function emailverified(Request $request)
+    {
+        $user = User::where("email",$request->email)->first();
+        if ($user){
+            $mytime = Carbon::now();
+            $user->email_verified_at = $mytime;
+            $user->save();
+            dd("email Verified ");
+        }else{
+            dd("Sorry! No Email Found");
+        }
     }
 }
