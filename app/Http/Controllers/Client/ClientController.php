@@ -37,7 +37,7 @@ class ClientController extends Controller
     {
         //test connection
         //https://206.78.36.94:11443/doc/page/login.asp
-        /*	  
+        /*
         $url = 'https://206.78.36.94:11443/doc/page/login.asp';
         $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_TIMEOUT, 5);
@@ -47,23 +47,23 @@ class ClientController extends Controller
         $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         $err = curl_error($ch);
         curl_close($ch);
-        if ($err) 
+        if ($err)
         {
             Log::error("cURL test Error #: $err");// \n\n Data: \n$data
         }
 
         if($httpcode>=200 && $httpcode<300)
         {
-            echo 'worked<br>';        
+            echo 'worked<br>';
         }
-        else 
+        else
         {
             echo "<br>curl didn't work on https://206.78.36.94:11443<br>";
         }
 
-        $host = "206.78.36.94"; 
+        $host = "206.78.36.94";
         $result = system("ping -c 1 $host" );
-        //echo "<br>Your ping is $result ms"; 
+        //echo "<br>Your ping is $result ms";
         //test connection end*/
 
         Log::notice("Adding student: " . $student->full_name . " to MDT at: " . $mdt);
@@ -108,7 +108,7 @@ class ClientController extends Controller
 
             \"updateTime\": \"20200331123025\",
 
-            \"images\": 
+            \"images\":
             [
 
                 {
@@ -116,7 +116,7 @@ class ClientController extends Controller
                 }
             ],
 
-            \"accessInfo\": 
+            \"accessInfo\":
             {
                 \"cardNum\": \"\",
                 \"password\": \"\",
@@ -134,10 +134,10 @@ class ClientController extends Controller
             'Content-type: multipart/form-data'
         );
 
-        //items added to try to fix connection refused error        
+        //items added to try to fix connection refused error
         //curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0");
         curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.41");
-        //curl_setopt($curl, CURLOPT_FOLLOWLOCATION, false); 
+        //curl_setopt($curl, CURLOPT_FOLLOWLOCATION, false);
         curl_setopt($curl, CURLOPT_REFERER, 'mdtURL');
         curl_setopt($curl, CURLOPT_TIMEOUT, 30);
         curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 30);
@@ -149,14 +149,14 @@ class ClientController extends Controller
         curl_setopt($curl, CURLOPT_URL, $mdtURL);
         curl_setopt($curl, CURLOPT_PORT, $mdt->https_port);
         curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
-        curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);        
+        curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);//less secure, but needed for self-signed certificate
         curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);//less secure, but needed for self-signed certificate
-        curl_setopt($curl, CURLOPT_SSL_VERIFYSTATUS , false);//less secure, but needed for self-signed certificate        
+        curl_setopt($curl, CURLOPT_SSL_VERIFYSTATUS , false);//less secure, but needed for self-signed certificate
         $response= curl_exec($curl);
         $err = curl_error($curl);
         curl_close($curl);
-        if ($err) 
+        if ($err)
         {
             Log::error("cURL Error #: $err \n\n");// \n\n Data: \n$data
         }
@@ -166,7 +166,7 @@ class ClientController extends Controller
         }
         $response = json_decode($response);
         if($response)
-        {       
+        {
             //Log::notice("Response: $response->data");
             if ($response->status == 0)
             {
@@ -187,7 +187,7 @@ class ClientController extends Controller
     {
         Log::notice("Adding all students to their assigned MDT!");
         $mdts  = Mdt::all();
-        
+
         foreach($mdts as $mdt)
         {
             Log::notice("Searching for students to add to MDT: ' $mdt->name ' @ $mdt->ip_address:$mdt->https_port   for school: $mdt->school" );
@@ -203,10 +203,10 @@ class ClientController extends Controller
             else
             {
                 Log::notice("No students found to add to the mdt. \n\n" );
-            }                        
+            }
 
-            foreach ($students as $student) 
-            {            
+            foreach ($students as $student)
+            {
                 try
                 {
                     self::createUserMDT($mdt, $student);
@@ -218,12 +218,12 @@ class ClientController extends Controller
             }
         }
     }
-	
+
 
 	public function uploadData()//registers user to mdt. Superseeded by uploadDataFOrAssignedSchoolMDT
-    {        
+    {
         $students = Student::where("upload",0)->get();
-        foreach ($students as $student) 
+        foreach ($students as $student)
 		{
             $path = public_path("uploads/$student->image");
             $type = pathinfo($path, PATHINFO_EXTENSION);
@@ -261,7 +261,7 @@ class ClientController extends Controller
 
 				\"updateTime\": \"20200331123025\",
 
-				\"images\": 
+				\"images\":
 				[
 
 					{
@@ -269,7 +269,7 @@ class ClientController extends Controller
 					}
 				],
 
-				\"accessInfo\": 
+				\"accessInfo\":
 				{
 					\"cardNum\": \"\",
 					\"password\": \"\",
@@ -299,7 +299,7 @@ class ClientController extends Controller
             $response= curl_exec($curl);
             $err = curl_error($curl);
             curl_close($curl);
-            if ($err) 
+            if ($err)
 			{
                 Log::error("cURL Error #:" . $err);
             }
@@ -333,10 +333,10 @@ class ClientController extends Controller
 		{
 		\"data\": $data
 		}";
-        
+
 		Log::notice("Data:\n $data");
         $mdts  = Mdt::all();
-        foreach ($mdts as $mdt) 
+        foreach ($mdts as $mdt)
 		{
             Log::notice("Adding students to blacklist on '$mdt->name' @ $mdt->ip_address:$mdt->https_port.");
             $curl = curl_init();
@@ -365,7 +365,7 @@ class ClientController extends Controller
                 $response= curl_exec($curl);
                 $err = curl_error($curl);
                 curl_close($curl);
-                if ($err) 
+                if ($err)
                 {
                     Log::error("cURL Error #:" . $err);
                 }
@@ -378,7 +378,7 @@ class ClientController extends Controller
                         $success = FALSE;
                     }
                 }
-                
+
             }
             catch (Exception $e)
             {
@@ -389,7 +389,7 @@ class ClientController extends Controller
         if($success == TRUE)
         {
             Log::notice("Ran successfully.");
-            foreach ($students as $std) 
+            foreach ($students as $std)
             {
                 $student = Student::find($std->id);
                 $student->black_list = 1;
@@ -398,7 +398,7 @@ class ClientController extends Controller
         }
     }
 
-    public function addBlackList($student)//used to add an individual to the blasklist (if they answered survey wrong or other reason)	
+    public function addBlackList($student)//used to add an individual to the blasklist (if they answered survey wrong or other reason)
     {
         Log::notice("Adding $student to blacklist.");
 
@@ -408,7 +408,7 @@ class ClientController extends Controller
 		}";
 		Log::notice("Data:\n $data");
         $mdts  = Mdt::all();
-        foreach ($mdts as $mdt) 
+        foreach ($mdts as $mdt)
 		{
             Log::notice("Adding student to blacklist on '$mdt->name' @ $mdt->ip_address:$mdt->https_port.");
             $curl = curl_init();
@@ -436,7 +436,7 @@ class ClientController extends Controller
                 $response= curl_exec($curl);
                 $err = curl_error($curl);
                 curl_close($curl);
-                if ($err) 
+                if ($err)
                 {
                     Log::error("cURL Error #:" . $err);
                 }
@@ -449,7 +449,7 @@ class ClientController extends Controller
                         $success = FALSE;
                     }
                 }
-                
+
             }
             catch (Exception $e)
             {
@@ -463,10 +463,10 @@ class ClientController extends Controller
             $student->black_list = 1;
             $student->save();
             /*
-            foreach ($students as $std) 
+            foreach ($students as $std)
             {
                 $student = Student::find($std->id);
-                
+
             }*/
         }
     }
@@ -481,9 +481,9 @@ class ClientController extends Controller
 		}";
 
 		Log::notice("Data:\n $data");
-        
+
         $mdts  = Mdt::all();
-        foreach ($mdts as $mdt) 
+        foreach ($mdts as $mdt)
 		{
             Log::notice("Removing student '$student->name' from blacklist on '$mdt->name' @ $mdt->ip_address:$mdt->https_port.");
             $curl = curl_init();
@@ -511,7 +511,7 @@ class ClientController extends Controller
                 $response= curl_exec($curl);
                 $err = curl_error($curl);
                 curl_close($curl);
-                if ($err) 
+                if ($err)
                 {
                     Log::error("cURL Error #:" . $err);
                 }
@@ -524,7 +524,7 @@ class ClientController extends Controller
                         $success = FALSE;
                     }
                 }
-                
+
             }
             catch (Exception $e)
             {
@@ -538,10 +538,10 @@ class ClientController extends Controller
             $student->black_list = 0;
                 $student->save();
             /*
-            foreach ($students as $std) 
+            foreach ($students as $std)
             {
                 $student = Student::find($std->id);
-                
+
             }*/
         }
     }
