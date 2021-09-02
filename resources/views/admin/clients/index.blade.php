@@ -5,9 +5,9 @@
   <div class="card card-custom ">
     <div class="card-header">
       <div class="card-title">
-											<span class="card-icon">
-												<i class="flaticon-users text-primary"></i>
-											</span>
+            <span class="card-icon">
+                <i class="flaticon-users text-primary"></i>
+            </span>
         <h3 class="card-label">Client List</h3>
 	      <div class="d-flex align-items-center ">
 		      <a class="btn btn-danger font-weight-bolder" onclick="del_selected()" href="javascript:void(0)"> <i class="la la-trash-o"></i>Delete All</a>

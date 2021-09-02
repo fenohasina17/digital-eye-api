@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\Admin\AttendanceController;
 use App\Http\Controllers\SMSController;
 use Illuminate\Support\Facades\Route;
 
@@ -34,6 +34,8 @@ Route::get('/clear',
 
 Auth::routes();
 
+
+
 Route::group([
     'middleware'    => ['auth'],
     'prefix'        => 'client',
@@ -43,6 +45,45 @@ Route::group([
     Route::get('/dashboard', 'ClientController@index')->name('client.dashboard');
 	Route::get('/profile', 'ClientController@edit')->name('client-profile');
 	Route::post('/admin-update', 'ClientController@update')->name('client-update');
+
+
+});
+
+
+Route::group([
+    'middleware'    => ['auth', 'is_parent'],
+    'prefix'        => 'parent',
+    'namespace'     => 'Parent'
+], function ()
+{
+    Route::get('/dashboard', 'ParentsController@index')->name('parent.dashboard');
+	Route::get('/profile', 'ParentsController@edit')->name('parent-profile');
+	Route::post('/admin-update', 'ParentsController@update')->name('parent-update');
+
+		Route::resource('Notifications', 'NotificationController');
+	
+		//Message Route
+		Route::resource('Message', 'MessageController');
+	
+		//Information Route
+	
+		Route::resource('Information', 'InformationController');
+	
+		//Grades Route
+	
+		Route::resource('Grades', 'GradesController');
+	
+		//Schedules Route
+	
+		Route::resource('Shedules', 'ShedulesController');
+	
+		//Announcements Route
+	
+		Route::resource('Announcements', 'AnnouncementsController');
+	
+		//Library Route
+	
+		Route::resource('Library', 'LibraryController');
 
 
 });
@@ -97,8 +138,39 @@ Route::group([
 	Route::get('mdt/delete/{id}', 'MdtController@destroy');
 	Route::post('delete-selected-mdts', 'MdtController@deleteSelectedClients')->name('admin.delete-selected-mdts');
 
-	//Message Route
 
+	//Notification Route
+	Route::resource('notifications', 'NotificationController');
+
+		//Attendance Route
+
+		Route::resource('attendance', 'AttendanceController');
+
+		//User Route
+		Route::resource('user', UserController::class);
+	
+		//Message Route
+		Route::resource('message', 'MessageController');
+	
+		//Information Route
+	
+		Route::resource('information', 'InformationController');
+	
+		//Grades Route
+	
+		Route::resource('grades', 'GradesController');
+	
+		//Schedules Route
+	
+		Route::resource('shedules', 'ShedulesController');
+	
+		//Announcements Route
+	
+		Route::resource('announcements', 'AnnouncementsController');
+	
+		//Library Route
+	
+		Route::resource('library', 'LibraryController');
 	
 });
 

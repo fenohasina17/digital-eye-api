@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-require_once '/home/derrick/Documents/digital/api.mobilevideosystems.net/vendor/autoload.php'; 
+require_once '/home/derrick/Desktop/api/digital-eye-api/vendor/autoload.php'; 
 
 use Twilio\Rest\Client; 
 
@@ -21,10 +21,19 @@ class SMSController extends Controller
 
     public function send( ){
 
+        $url = 'http://cmsv6.mobilevideosystems.net:8443/api/v1/face/addPerson';
 
-        $students = User::all();
+        $curl = curl_init($url);
+        curl_setopt($curl, CURLOPT_POST, true);
+        $data = curl_exec($curl);
+        $httpcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        $err = curl_error($curl);
+        dd($data);
+        curl_close($curl);
 
+        die;
         
+        $students = User::all();
         
 
         $phoneNumber = array();

@@ -52,6 +52,8 @@ class LoginController extends Controller
         {
             if (auth()->user()->is_admin == 1) {
                 return redirect()->route('admin.dashboard');
+            }elseif (auth()->user()->is_parent == 1){
+                return redirect()->route('parent.dashboard');
             }else{
                 return redirect()->route('client.dashboard');
             }

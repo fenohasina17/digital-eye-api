@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-require_once '/home/derrick/Documents/digital/api.mobilevideosystems.net/vendor/autoload.php'; 
+//require_once '/home/derrick/Desktop/api/digital-eye-api/vendor/autoload.php';
 
 use Twilio\Rest\Client; 
 
@@ -53,7 +53,7 @@ class sendMessages extends Command
         foreach ($parents as $parent){
             if($parent->is_parent = 1 ){
                 array_push($phoneNumber, $parent->phone);
-               
+             
             }
         }
         

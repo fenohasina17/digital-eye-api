@@ -24,8 +24,8 @@ class RedirectIfAuthenticated
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check() && auth()->user()->is_admin == 1) {
                 return redirect()->route('admin.dashboard');
-            }else if (Auth::guard($guard)->check() && auth()->user()->is_admin != 1)  {
-                return redirect()->route('client.dashboard');
+            }else if (Auth::guard($guard)->check() && auth()->user()->is_parent == 1)  {
+                return redirect()->route('parent.dashboard');
             }else {
                 return $next($request);
             }
