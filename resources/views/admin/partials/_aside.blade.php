@@ -79,7 +79,7 @@
 					<span class="menu-text">Messages</span>
 				</a>
 			</li>
-			
+
 			<!-- Users  -->
 			<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
 				<a  href="{{ route('user.index')}}" class="menu-link">
@@ -244,7 +244,7 @@
 
 			<!-- Behavior -->
 			<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-				<a  href="" class="menu-link">
+				<a  href="{{ route('behavior.index')}}" class="menu-link">
 					<span class="svg-icon menu-icon">
 						<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
 						<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -264,7 +264,7 @@
 
 			<!-- Accounting -->
 			<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-				<a  href="" class="menu-link">
+				<a  href="{{ route('accounting.index')}}" class="menu-link">
 					<span class="svg-icon menu-icon">
 						<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
 						<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -285,7 +285,7 @@
 
 			<!-- Teachers files -->
 			<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-				<a  href="" class="menu-link">
+				<a  href="{{ route('teacher_files.index')}}" class="menu-link">
 					<span class="svg-icon menu-icon">
 						<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
 						<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -305,7 +305,7 @@
 
 			<!-- Classroom -->
 			<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-				<a  href="" class="menu-link">
+				<a  href="{{ route('class_room.index')}}" class="menu-link">
 					<span class="svg-icon menu-icon">
 						<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
 						<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -325,7 +325,7 @@
 
 			<!-- School Bus -->
 			<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-				<a  href="" class="menu-link">
+				<a  href="{{ route('school_bus.index')}}" class="menu-link">
 					<span class="svg-icon menu-icon">
 						<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
 						<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -345,7 +345,7 @@
 
 			<!-- System Settings -->
 			<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-				<a  href="" class="menu-link">
+				<a  href="{{ route('system_settings.index')}}" class="menu-link">
 					<span class="svg-icon menu-icon">
 						<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
 						<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -366,7 +366,7 @@
 
 			<!-- Academic Settings-->
 			<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-				<a  href="" class="menu-link">
+				<a  href="{{ route('academic_settings.index')}}" class="menu-link">
 					<span class="svg-icon menu-icon">
 						<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
 						<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

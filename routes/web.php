@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () 
+Route::get('/', function ()
 {
     return view('auth.login');
 });
@@ -25,7 +25,7 @@ Route::get('/upload-assigned', 'Client\ClientController@uploadDataForAssignedSch
 Route::get('/black-list', 'Client\ClientController@blackList')->name('black-list');
 Route::get('/clear',
 	function(){
-	
+
 		Artisan::call('config:clear');
 		Artisan::call('cache:clear');
 		Artisan::call('config:cache');
@@ -61,28 +61,28 @@ Route::group([
 	Route::post('/admin-update', 'ParentsController@update')->name('parent-update');
 
 		Route::resource('Notifications', 'NotificationController');
-	
+
 		//Message Route
 		Route::resource('Message', 'MessageController');
-	
+
 		//Information Route
-	
+
 		Route::resource('Information', 'InformationController');
-	
+
 		//Grades Route
-	
+
 		Route::resource('Grades', 'GradesController');
-	
+
 		//Schedules Route
-	
+
 		Route::resource('Shedules', 'ShedulesController');
-	
+
 		//Announcements Route
-	
+
 		Route::resource('Announcements', 'AnnouncementsController');
-	
+
 		//Library Route
-	
+
 		Route::resource('Library', 'LibraryController');
 
 
@@ -109,7 +109,7 @@ Route::group([
 	Route::get('student-quizzes/{id}', 'ClientController@quizzes')->name("student-quizzes");
 	Route::get('quiz-answers/{id}', 'ClientController@answers')->name("quiz-answers");
 	Route::post('delete-selected-clients', 'ClientController@deleteSelectedClients')->name('admin.delete-selected-clients');
-	
+
 	//User Routes
 	Route::resource('questions','QuestionController');
 	Route::post('get-questions', 'QuestionController@getClients')->name('admin.getQuestions');
@@ -148,30 +148,58 @@ Route::group([
 
 		//User Route
 		Route::resource('user', UserController::class);
-	
+
 		//Message Route
 		Route::resource('message', 'MessageController');
-	
+
 		//Information Route
-	
+
 		Route::resource('information', 'InformationController');
-	
+
 		//Grades Route
-	
+
 		Route::resource('grades', 'GradesController');
-	
+
 		//Schedules Route
-	
+
 		Route::resource('shedules', 'ShedulesController');
-	
+
 		//Announcements Route
-	
+
 		Route::resource('announcements', 'AnnouncementsController');
-	
+
 		//Library Route
-	
-		Route::resource('library', 'LibraryController');
-	
+
+        Route::resource('library', 'LibraryController');
+
+        //Behavior Route
+
+        Route::resource('behavior', 'BehaviorController');
+
+        //Accounting Route
+
+        Route::resource('accounting', 'AccountingController');
+
+        //Teacher Files Route
+
+        Route::resource('teacher_files', 'TeacherfilesController');
+
+        //Class Room Route
+
+        Route::resource('class_room', 'ClassroomController');
+
+        //School Bus Route
+
+        Route::resource('school_bus', 'SchoolbusController');
+
+        //Teacher Files Route
+
+        Route::resource('system_settings', 'SystemsettingsController');
+
+        //Teacher Files Route
+
+        Route::resource('academic_settings', 'AcademicsettingsController');
+
 });
 
 	Route::any('send-sms', 'SMSController@send');
