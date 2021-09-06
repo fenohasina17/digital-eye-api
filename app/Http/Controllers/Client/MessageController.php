@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -16,6 +16,6 @@ class MessageController extends Controller
     public function index()
     {
 	    $title = 'User';
-	    return view('admin.message.index',compact('title'));
+	    return view('client.message.index',compact('title'));
     }
 }

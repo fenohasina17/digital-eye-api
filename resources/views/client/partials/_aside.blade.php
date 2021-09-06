@@ -6,7 +6,7 @@
 	<div class="brand flex-column-auto" id="kt_brand">
 
 		<!--begin::Logo-->
-		<a href="{{ route('admin.dashboard') }}" class="brand-logo">
+		<a href="{{ route('client.dashboard') }}" class="brand-logo">
 			<img alt="Logo" src="{{ asset($logo) }}" width="100%"/>
 		</a>
 
@@ -42,8 +42,8 @@
 
 			<!--begin::Menu Nav-->
 			<ul class="menu-nav">
-				<li class="menu-item <?php if (Request::segment(1) == 'admin' && Request::segment(2) == 'dashboard'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-					<a href="{{ route('admin.dashboard') }}" class="menu-link">
+				<li class="menu-item <?php if (Request::segment(1) == 'client' && Request::segment(2) == 'dashboard'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+					<a href="{{ route('client.dashboard') }}" class="menu-link">
 						<span class="svg-icon menu-icon">
 							<!--begin::Svg Icon | path:assets/media/svg/icons/Design/Layers.svg-->
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -61,8 +61,8 @@
 				</li>
 
 <!-- Messages  -->
-<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-<a  href="{{ route('message.index') }}" class="menu-link">
+<li class="menu-item <?php if (Request::segment(1) == 'client'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+<a  href="{{ route('messages.index') }}" class="menu-link">
 	<span class="svg-icon menu-icon">
 		<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
 		<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -81,8 +81,8 @@
 </li>
 
 <!-- Users  -->
-<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-<a  href="{{ route('user.index')}}" class="menu-link">
+<li class="menu-item <?php if (Request::segment(1) == 'client'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+<a  href="{{ route('users.index')}}" class="menu-link">
 	<span class="svg-icon menu-icon">
 		<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
 		<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -101,8 +101,8 @@
 </li>
 
 <!-- Notifications  -->
-<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-<a  href="{{ route('notifications.index') }}" class="menu-link">
+<li class="menu-item <?php if (Request::segment(1) == 'client'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+<a  href="{{ route('notification.index') }}" class="menu-link">
 	<span class="svg-icon menu-icon">
 		<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
 		<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -121,8 +121,8 @@
 </li>
 
 <!-- Information  -->
-<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-<a  href="{{ route('information.index')}}" class="menu-link">
+<li class="menu-item <?php if (Request::segment(1) == 'client'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+<a  href="{{ route('informations.index')}}" class="menu-link">
 	<span class="svg-icon menu-icon">
 		<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
 		<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -141,8 +141,8 @@
 </li>
 
 <!-- Grades  -->
-<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-<a  href="{{ route('grades.index')}}" class="menu-link">
+<li class="menu-item <?php if (Request::segment(1) == 'client'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+<a  href="{{ route('grade.index')}}" class="menu-link">
 	<span class="svg-icon menu-icon">
 		<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
 		<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -161,8 +161,8 @@
 </li>
 
 <!-- Attendance -->
-<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-<a  href="{{ route('attendance.index')}}" class="menu-link">
+<li class="menu-item <?php if (Request::segment(1) == 'client'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+<a  href="{{ route('attendances.index')}}" class="menu-link">
 	<span class="svg-icon menu-icon">
 		<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
 		<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -181,8 +181,8 @@
 </li>
 
 <!-- Schedules -->
-<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-<a  href="{{ route('shedules.index')}}" class="menu-link">
+<li class="menu-item <?php if (Request::segment(1) == 'client'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+<a  href="{{ route('shedule.index')}}" class="menu-link">
 	<span class="svg-icon menu-icon">
 		<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
 		<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -202,8 +202,8 @@
 
 
 <!-- Announcements -->
-<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-<a  href="{{ route('announcements.index')}}" class="menu-link">
+<li class="menu-item <?php if (Request::segment(1) == 'client'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+<a  href="{{ route('announcement.index')}}" class="menu-link">
 	<span class="svg-icon menu-icon">
 		<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
 		<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -223,8 +223,8 @@
 
 
 <!-- Library -->
-<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-<a  href="{{ route('library.index')}}" class="menu-link">
+<li class="menu-item <?php if (Request::segment(1) == 'client'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+<a  href="{{ route('librarys.index')}}" class="menu-link">
 	<span class="svg-icon menu-icon">
 		<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
 		<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -243,7 +243,7 @@
 </li>
 
 <!-- Behavior -->
-<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+<li class="menu-item <?php if (Request::segment(1) == 'client'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
 <a  href="" class="menu-link">
 	<span class="svg-icon menu-icon">
 		<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
@@ -263,7 +263,7 @@
 </li>
 
 <!-- Accounting -->
-<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+<li class="menu-item <?php if (Request::segment(1) == 'client'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
 <a  href="" class="menu-link">
 	<span class="svg-icon menu-icon">
 		<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
@@ -284,7 +284,7 @@
 
 
 <!-- Teachers files -->
-<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+<li class="menu-item <?php if (Request::segment(1) == 'client'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
 <a  href="" class="menu-link">
 	<span class="svg-icon menu-icon">
 		<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
@@ -304,7 +304,7 @@
 </li>
 
 <!-- Classroom -->
-<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+<li class="menu-item <?php if (Request::segment(1) == 'client'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
 <a  href="" class="menu-link">
 	<span class="svg-icon menu-icon">
 		<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
@@ -324,7 +324,7 @@
 </li>
 
 <!-- School Bus -->
-<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+<li class="menu-item <?php if (Request::segment(1) == 'client'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
 <a  href="" class="menu-link">
 	<span class="svg-icon menu-icon">
 		<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
@@ -344,7 +344,7 @@
 </li>
 
 <!-- System Settings -->
-<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+<li class="menu-item <?php if (Request::segment(1) == 'client'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
 <a  href="" class="menu-link">
 	<span class="svg-icon menu-icon">
 		<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
@@ -365,7 +365,7 @@
 
 
 <!-- Academic Settings-->
-<li class="menu-item <?php if (Request::segment(1) == 'admin'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+<li class="menu-item <?php if (Request::segment(1) == 'client'  && Request::segment(2) == 'attendance'){echo 'menu-item-active'; }?>" aria-haspopup="true">
 <a  href="" class="menu-link">
 	<span class="svg-icon menu-icon">
 		<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Timer.svg-->
@@ -390,7 +390,7 @@
 	<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
 </li>
 	<!-- Manage Users -->
-	<li class="menu-item <?php if (Request::segment(1) == 'admin' && Request::segment(2) == 'clients'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+	<li class="menu-item <?php if (Request::segment(1) == 'client' && Request::segment(2) == 'clients'){echo 'menu-item-active'; }?>" aria-haspopup="true">
 	<a  href="{{ route('clients.index') }}" class="menu-link">
 			<span class="svg-icon menu-icon">
 
@@ -408,8 +408,8 @@
 		<span class="menu-text">Manage Users</span>
 	</a>
 	<!-- Manage Mdts -->
-	<li class="menu-item <?php if (Request::segment(1) == 'admin' && Request::segment(2) == 'mdts'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-	<a  href="{{ route('mdts.index') }}" class="menu-link">
+	<li class="menu-item <?php if (Request::segment(1) == 'client' && Request::segment(2) == 'mdts'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+	<a  href="{{ route('mdt.index') }}" class="menu-link">
 		<span class="svg-icon menu-icon">
 
 			<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Library.svg-->
@@ -427,7 +427,7 @@
 	</li>
 
 	<!-- Video Preview -->
-	<li class="menu-item <?php if (Request::segment(1) == 'admin' && Request::segment(2) == 'mdts'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+	<li class="menu-item <?php if (Request::segment(1) == 'client' && Request::segment(2) == 'mdts'){echo 'menu-item-active'; }?>" aria-haspopup="true">
 	<a  href="{{ route('mdts.index') }}" class="menu-link">
 		<span class="svg-icon menu-icon">
 
@@ -446,7 +446,7 @@
 	</li>
 
 	<!-- Manage Staff -->
-	<li class="menu-item <?php if (Request::segment(1) == 'admin' && Request::segment(2) == 'mdts'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+	<li class="menu-item <?php if (Request::segment(1) == 'client' && Request::segment(2) == 'mdts'){echo 'menu-item-active'; }?>" aria-haspopup="true">
 	<a  href="{{ route('mdts.index') }}" class="menu-link">
 		<span class="svg-icon menu-icon">
 
@@ -471,7 +471,7 @@
 	<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
 </li>
 <!-- Manage questions -->
-	<li class="menu-item <?php if (Request::segment(1) == 'admin' && Request::segment(2) == 'questions'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+	<li class="menu-item <?php if (Request::segment(1) == 'client' && Request::segment(2) == 'questions'){echo 'menu-item-active'; }?>" aria-haspopup="true">
 		<a  href="{{ route('questions.index') }}" class="menu-link">
 			<span class="svg-icon menu-icon">
 
@@ -538,7 +538,7 @@
 					<h4 class="menu-text">CMS</h4>
 					<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
 				</li>
-				<li class="menu-item <?php if (Request::segment(1) == 'admin' && Request::segment(2) == 'setting'){echo 'menu-item-active'; }?>" aria-haspopup="true">
+				<li class="menu-item <?php if (Request::segment(1) == 'client' && Request::segment(2) == 'setting'){echo 'menu-item-active'; }?>" aria-haspopup="true">
 					<a  href="{{ route('setting.index') }}" class="menu-link">
 						<span class="svg-icon menu-icon">
 

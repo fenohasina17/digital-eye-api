@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -16,6 +16,6 @@ class NotificationController extends Controller
     public function index()
     {
 	    $title = 'Notifications';
-	    return view('admin.notifications.index',compact('title'));
+	    return view('client.notifications.index',compact('title'));
     }
 }

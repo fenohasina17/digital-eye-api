@@ -1,4 +1,4 @@
-@extends('admin.layouts.master')
+@extends('client.layouts.master')
 @section('title',$title)
 @section('content')
 	<!--begin::Entry-->
@@ -14,34 +14,14 @@
             @endphp
             <div class="container">
                 <p style="text-align:center; margin-bottom:20px">
-                    <img src="{{ asset('assets/media/picture/logo.png') }}" alt="Goldens Plains">
+
+                    
+                    <img src="{{$admin}}" alt="Goldens Plains" style="width:520px">
                 </p>
             </div>
             <div class="row">
-                <div class="col-xl-3">
-                    <!--begin::Stats Widget 16-->
-                    <a href="#" class="card card-custom card-stretch gutter-b">
-                        <!--begin::Body-->
-                        <div class="card-body">
-												<span class="svg-icon svg-icon-info svg-icon-3x ml-n1">
-													<!--begin::Svg Icon | path:/metronic/theme/html/demo1/dist/assets/media/svg/icons/Shopping/Cart3.svg-->
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-														<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                            <polygon points="0 0 24 0 24 24 0 24"/>
-                                                            <path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
-                                                            <path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z" fill="#000000" fill-rule="nonzero"/>
-                                                        </g>
-													</svg>
-                                                    <!--end::Svg Icon-->
-												</span>
-                            <div class="text-inverse-white font-weight-bolder font-size-h5 mb-2 mt-5">{{$students}}</div>
-                            <div class="font-weight-bold text-inverse-white font-size-sm">Admins</div>
-                        </div>
-                        <!--end::Body-->
-                    </a>
-                    <!--end::Stats Widget 16-->
-                </div>
-                <div class="col-xl-3">
+
+                <div class="col-xl-4">
                     <!--begin::Stats Widget 17-->
                     <a href="#" class="card card-custom bg-info bg-hover-state-info card-stretch card-stretch gutter-b">
                         <!--begin::Body-->
@@ -64,7 +44,7 @@
                     </a>
                     <!--end::Stats Widget 17-->
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-4">
                     <!--begin::Stats Widget 18-->
                     <a href="#" class="card card-custom bg-dark bg-hover-state-dark card-stretch gutter-b">
                         <!--begin::Body-->
@@ -88,7 +68,7 @@
                     <!--end::Stats Widget 18-->
                 </div>
 
-                <div class="col-xl-3">
+                <div class="col-xl-4">
                     <!--begin::Stats Widget 18-->
                     <a href="#" class="card card-custom bg-dark bg-hover-state-dark card-stretch gutter-b">
                         <!--begin::Body-->
@@ -111,8 +91,6 @@
                     </a>
                     <!--end::Stats Widget 18-->
                 </div>
-
-<h1>I am School admin</h1>
 
             </div>
 			<!--end::Row-->

@@ -18,22 +18,27 @@
 
  <div class="row" style="padding-block-start: 80px; padding:50px;">
      <div class="col-md-3">
-         <label for="class">CLASS:</label>
+         <label for="class">GRADES:</label>
         <select class=" class custom-select custom-select-lg mb-3">
-            <option selected>Select your class</option>
-            <option value="1">Class1</option>
-            <option value="2">Class2</option>
-            <option value="3">Class3</option>
+            <option selected>Select your grades</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="1">4</option>
+            <option value="2">5</option>
+            <option value="3">6</option>
+            <option value="1">7</option>
+            <option value="2">8</option>
         </select>
           
      </div>
      <div class="col-md-3">
-         <label for="section">SECTION:</label>
+         <label for="section">CLASS:</label>
         <select class="section custom-select custom-select-lg mb-3">
             <option selected>Select section</option>
-            <option value="1">A</option>
-            <option value="2">B</option>
-            <option value="3">C</option>
+            <option value="1">Class1</option>
+            <option value="2">Class2</option>
+            <option value="3">Class3</option>
         </select>
           
      </div>
@@ -53,6 +58,20 @@
          <button class="btn btn-success">DOWNLOAD</button>
      </div>
  </div>
+ <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">USERNAME</th>
+      <th scope="col">DATE</th>
+      <th scope="col">IN TIME</th>
+      <th scope="col">OUT TIME</th>    
+      <th scope="col">MASK</th>
+      <th scope="col">TEMPERATURE</th>
+    </tr>
+  </thead>
+ 
+</table>
   
 @endsection
 @section('stylesheets')

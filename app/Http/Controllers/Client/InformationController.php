@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -17,6 +17,6 @@ class InformationController extends Controller
     public function index()
     {
 	    $title = 'Information';
-	    return view('admin.information.index',compact('title'));
+	    return view('client.information.index',compact('title'));
     }
 }

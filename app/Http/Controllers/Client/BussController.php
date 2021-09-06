@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Controller;
 use App\Models\Buss;
@@ -17,7 +17,7 @@ class BussController extends Controller
     public function index()
     {
 	    $title = 'Buses';
-	    return view('admin.buses.index',compact('title'));
+	    return view('client.buses.index',compact('title'));
     }
 
     /**

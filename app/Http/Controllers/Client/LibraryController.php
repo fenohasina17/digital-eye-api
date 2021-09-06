@@ -15,7 +15,7 @@ class LibraryController extends Controller
     public function index()
     {
 	    $title = 'Library';
-	    return view('admin.library.index',compact('title'));
+	    return view('client.library.index',compact('title'));
     }
     //
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Client;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -15,7 +15,7 @@ class AnnouncementsController extends Controller
     public function index()
     {
 	    $title = 'Announcements';
-	    return view('admin.announcements.index',compact('title'));
+	    return view('client.announcements.index',compact('title'));
     }
     //
 

@@ -47,6 +47,82 @@ Route::group([
 	Route::post('/admin-update', 'ClientController@update')->name('client-update');
 
 
+	//User Routes
+	Route::resource('clients','ClientController');
+	Route::post('get-clients', 'ClientController@getClients')->name('admin.getClients');
+	Route::post('get-client', 'ClientController@clientDetail')->name('admin.getClient');
+	Route::get('client/delete/{id}', 'ClientController@destroy');
+	Route::get('client-students/{id}', 'ClientController@students')->name("client-students");
+	Route::get('student-quizzes/{id}', 'ClientController@quizzes')->name("student-quizzes");
+	Route::get('quiz-answers/{id}', 'ClientController@answers')->name("quiz-answers");
+	Route::post('delete-selected-clients', 'ClientController@deleteSelectedClients')->name('admin.delete-selected-clients');
+	
+	//User Routes
+	Route::resource('questions','QuestionController');
+	Route::post('get-questions', 'QuestionController@getClients')->name('admin.getQuestions');
+	Route::post('get-question', 'QuestionController@clientDetail')->name('admin.getQuestion');
+	Route::get('question/delete/{id}', 'QuestionController@destroy');
+	Route::post('delete-selected-questions', 'QuestionController@deleteSelectedClients')->name('admin.delete-selected-questions');
+
+	//schools Routes
+	Route::resource('schools','SchoolController');
+	Route::post('get-schools', 'SchoolController@getClients')->name('admin.getSchools');
+	Route::post('get-school', 'SchoolController@clientDetail')->name('admin.getSchool');
+	Route::get('school/delete/{id}', 'SchoolController@destroy');
+	Route::post('delete-selected-schools', 'SchoolController@deleteSelectedClients')->name('admin.delete-selected-schools');
+
+	//Buses Routes
+	Route::resource('buses','BussController');
+	Route::post('get-buses', 'BussController@getClients')->name('admin.getBuses');
+	Route::post('get-buss', 'BussController@clientDetail')->name('admin.getBuss');
+	Route::get('buss/delete/{id}', 'BussController@destroy');
+	Route::post('delete-selected-buses', 'BussController@deleteSelectedClients')->name('admin.delete-selected-buses');
+
+	//Mdt Routes
+	Route::resource('mdt','MdtController');
+	Route::post('get-mdts', 'MdtController@getClients')->name('client.getMdts');
+	Route::post('get-mdt', 'MdtController@clientDetail')->name('client.getMdt');
+	Route::get('mdt/delete/{id}', 'MdtController@destroy');
+	Route::post('delete-selected-mdts', 'MdtController@deleteSelectedClients')->name('client.delete-selected-mdts');
+
+
+	//Notification Route
+	Route::resource('notification', 'NotificationController');
+
+		//Attendance Route
+
+		Route::resource('attendances', 'AttendanceController');
+
+		//User Route
+		Route::resource('users', UserController::class);
+	
+		//Message Route
+		Route::resource('messages', 'MessageController');
+	
+		//Information Route
+	
+		Route::resource('informations', 'InformationController');
+	
+		//Grades Route
+	
+		Route::resource('grade', 'GradesController');
+	
+		//Schedules Route
+	
+		Route::resource('shedule', 'ShedulesController');
+	
+		//Announcements Route
+	
+		Route::resource('announcement', 'AnnouncementsController');
+	
+		//Library Route
+	
+		Route::resource('librarys', 'LibraryController');
+
+
+
+
+
 });
 
 
@@ -173,5 +249,7 @@ Route::group([
 		Route::resource('library', 'LibraryController');
 	
 });
+
+
 
 	Route::any('send-sms', 'SMSController@send');

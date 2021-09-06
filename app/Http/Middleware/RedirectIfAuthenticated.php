@@ -26,7 +26,8 @@ class RedirectIfAuthenticated
                 return redirect()->route('admin.dashboard');
             }else if (Auth::guard($guard)->check() && auth()->user()->is_parent == 1)  {
                 return redirect()->route('parent.dashboard');
-            }else {
+            }
+            else {
                 return $next($request);
             }
         }

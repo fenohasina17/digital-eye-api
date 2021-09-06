@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Log;
 
+use function PHPUnit\Framework\at;
+
 class ClientController extends Controller
 {
     /**
@@ -18,9 +20,22 @@ class ClientController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    {  
+        $admin = null;
+        $mail = auth()->user()->email;
+        if($mail == "Cantua@admin.com"){
+            $admin = asset('assets/media/picture/tigre.jpg');
+        }elseif($mail == "Helm@admin.com"){
+            $admin = asset('assets/media/picture/Helm-3.jpg');
+        }elseif($mail == "Rio@admin.com"){
+            $admin = asset('assets/media/picture/rio.png');
+        }elseif($mail == "San@admin.com"){
+            $admin = asset('assets/media/picture/san.png');
+        }elseif($mail = "Tranquility@admin.com"){
+            $admin = asset('assets/media/picture/tranquility.jpg');
+        }
         $title = 'NewsWatch Client Dashboard';
-        return view('client.dashboard.index',compact('title'));
+        return view('client.dashboard.index',compact('title'))->with('admin',$admin);
     }
 
     /**
