@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-require_once '/home/iando/Bureau/derrick/digital-eye-api/vendor/autoload.php';
+ // require_once '/home/iando/Bureau/derrick/digital-eye-api/vendor/autoload.php';
 
 use Twilio\Rest\Client;
 

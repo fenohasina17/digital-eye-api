@@ -14,8 +14,8 @@ class SchoolbusController extends Controller
      */
     public function index()
     {
-	    $title = 'Behavior';
-	    return view('admin.behavior.index',compact('title'));
+	    $title = 'School Bus';
+	    return view('admin.buses.index',compact('title'));
     }
     //
 
