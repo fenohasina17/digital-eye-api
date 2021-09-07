@@ -30,7 +30,7 @@
             <option value="1">7</option>
             <option value="2">8</option>
         </select>
-          
+
      </div>
      <div class="col-md-3">
          <label for="section">CLASS:</label>
@@ -40,18 +40,18 @@
             <option value="2">Class2</option>
             <option value="3">Class3</option>
         </select>
-          
+
      </div>
      <div class="col-md-2">
         <label for="startDate">START DATE</label>
         <input type="date" name="startDate" id="startDate" class="startDate  form-control" >
-          
+
      </div>
      <div class="col-md-2">
         <label for="startDate">END DATE</label>
         <input type="date" name="endDate" id="endDate" class="endDate  form-control" >
         </select>
-          
+
      </div>
      <div class="col-md-2" style="padding: 30px">
          <button class="btn btn-primary">VIEW</button>
@@ -65,14 +65,17 @@
       <th scope="col">USERNAME</th>
       <th scope="col">DATE</th>
       <th scope="col">IN TIME</th>
-      <th scope="col">OUT TIME</th>    
+      <th scope="col">OUT TIME</th>
       <th scope="col">MASK</th>
       <th scope="col">TEMPERATURE</th>
     </tr>
   </thead>
- 
+
 </table>
-  
+  <!-- @foreach($attendances as $attendance)
+    <p>{{ $attendance->bodyTemperature }}</p>
+  @endforeach -->
+
 @endsection
 @section('stylesheets')
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">

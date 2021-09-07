@@ -276,6 +276,10 @@ Route::group([
 
         Route::resource('academic_settings', 'AcademicsettingsController');
 
+		//Video Preview 
+
+		Route::resource('video_preview', 'VideoPreviewController');
+
 });
 
 
