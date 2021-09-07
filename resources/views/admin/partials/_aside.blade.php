@@ -370,7 +370,7 @@
 
 					<!-- Video Preview -->
 					<li class="menu-item <?php if (Request::segment(1) == 'admin' && Request::segment(2) == 'mdts'){echo 'menu-item-active'; }?>" aria-haspopup="true">
-					<a  href="#" class="menu-link">
+					<a  href="{{ route('video.index') }}" class="menu-link">
 						<span class="svg-icon menu-icon">
 
 							<!--begin::Svg Icon | path:assets/media/svg/icons/Home/Library.svg-->
