@@ -228,7 +228,7 @@ class QuestionController extends Controller
 	{
 		$input = $request->all();
 		$this->validate($request, [
-			'clients' => 'required',
+			'questions' => 'required',
 		]);
 		foreach ($input['questions'] as $index => $id) {
 

@@ -15,7 +15,7 @@
             <!--begin::Breadcrumb-->
             <ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold p-0 my-2 font-size-sm">
               <li class="breadcrumb-item text-muted">
-                <a href="" class="text-muted">Manage MDTs</a>
+                <a href="" class="text-muted">Manage Mdts</a>
               </li>
               <li class="breadcrumb-item text-muted">
                 <a href="" class="text-muted">Add Mdt</a>
@@ -50,8 +50,10 @@
 
               <div class="btn-group">
                 <a href="{{ route('mdts.store') }}"  onclick="event.preventDefault(); document.getElementById('client_add_form').submit();" id="kt_btn" class="btn btn-primary font-weight-bolder">
-                  <i class="ki ki-check icon-sm"></i>Save
-                  </a>
+                  <i class="ki ki-check icon-sm"></i>Save</a>
+
+
+
               </div>
             </div>
           </div>

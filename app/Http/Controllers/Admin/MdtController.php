@@ -28,8 +28,7 @@ class MdtController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-	public function getClients(Request $request)
-    {
+	public function getClients(Request $request){
 		$columns = array(
 			0 => 'id',
 			1 => 'name',
@@ -51,9 +50,7 @@ class MdtController extends Controller
 				->orderBy($order,$dir)
 				->get();
 			$totalFiltered = Mdt::count();
-		}
-        else
-        {
+		}else{
 			$search = $request->input('search.value');
 			$users = Mdt::where([
 				['name', 'like', "%{$search}%"],
@@ -84,8 +81,7 @@ class MdtController extends Controller
 		$data = array();
 
 		if($users){
-			foreach($users as $r)
-            {
+			foreach($users as $r){
 				$edit_url = route('mdts.edit',$r->id);
 				$nestedData['id'] = '<td><label class="checkbox checkbox-outline checkbox-success"><input type="checkbox" name="mdts[]" value="'.$r->id.'"><span></span></label></td>';
 				$nestedData['name'] = $r->name;

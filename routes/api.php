@@ -17,9 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
+Route::any('send-sms', 'SMSController@send');
 Route::post('/register', 'Api\AuthController@register');
 Route::post('/login', 'Api\AuthController@login');
+Route::post('/send-email', 'Api\AuthController@sendEmail');
+Route::post('/confirm-code', 'Api\AuthController@confirmCode');
 Route::get('user-index', 'Api\UserController@index')->middleware('auth:api');
 Route::get('get-students', 'Api\UserController@getStudents')->middleware('auth:api');
 Route::get('get-questions', 'Api\UserController@getQuestions')->middleware('auth:api');

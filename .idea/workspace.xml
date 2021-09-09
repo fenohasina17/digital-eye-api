@@ -147,15 +147,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../event_calendar" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Xammp 7.3 2020\htdocs\2021\digital_eye\resources\views\admin" />
-      <recent name="D:\Xammp 7.3 2020\htdocs\2021\digital_eye\app\Http\Controllers\Admin" />
-      <recent name="D:\Xammp 7.3 2020\htdocs\2021\digital_eye\resources\views\auth" />
-      <recent name="D:\Xammp 7.3 2020\htdocs\2021\digital_eye\resources\views\emails" />
-      <recent name="D:\Xammp 7.3 2020\htdocs\2021\digital_eye\resources\views\admin\clients" />
+      <recent name="D:\Xammp 7.3 2020\htdocs\2021\always-schedule\app\Http\Controllers" />
+      <recent name="D:\Xammp 7.3 2020\htdocs\2021\always-schedule\app" />
     </key>
   </component>
   <component name="RunManager">
@@ -177,10 +174,7 @@
       <workItem from="1615956934294" duration="10015000" />
       <workItem from="1616059472670" duration="317000" />
       <workItem from="1618986308333" duration="12304000" />
-      <workItem from="1619162973373" duration="51907000" />
-      <workItem from="1621245275262" duration="4680000" />
-      <workItem from="1621330619643" duration="30401000" />
-      <workItem from="1622088821174" duration="595000" />
+      <workItem from="1619162973373" duration="616000" />
     </task>
     <servers />
   </component>
@@ -188,18 +182,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2291" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1619774688801">
+    <state x="2291" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1619072401552">
       <screen x="1920" y="0" width="1280" height="680" />
     </state>
-    <state x="2291" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/1920.0.1280.680@1920.0.1280.680" timestamp="1619774688801" />
-    <state x="2341" y="96" key="FileChooserDialogImpl" timestamp="1620201199814">
+    <state x="2291" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/1920.0.1280.680@1920.0.1280.680" timestamp="1619072401552" />
+    <state x="2341" y="96" key="FileChooserDialogImpl" timestamp="1619077217955">
       <screen x="1920" y="0" width="1280" height="680" />
     </state>
-    <state x="2341" y="96" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1280.680@1920.0.1280.680" timestamp="1620201199814" />
-    <state x="2223" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1621933676214">
-      <screen x="1920" y="0" width="1280" height="680" />
-    </state>
-    <state x="2223" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1280.680@1920.0.1280.680" timestamp="1621933676214" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1621713090675" />
+    <state x="2341" y="96" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1280.680@1920.0.1280.680" timestamp="1619077217955" />
   </component>
 </project>

@@ -217,6 +217,10 @@ class UserController extends ApiController
             'full_name' => 'required|max:55',
             'email' => 'email|required|unique:students',
             'phone' => 'required',
+            // 'state' => 'required',
+            // 'city' => 'required',
+            // 'zip' => 'required',
+            //'address' => 'required',
             'emergency_phone' => 'required',
             'emergency_contact' => 'required',
             'first_name' => 'required',
@@ -235,6 +239,10 @@ class UserController extends ApiController
         $save->full_name = $request->full_name;
         $save->email = $request->email;
         $save->phone = $request->phone;
+        // $save->state = $request->state;
+        // $save->city = $request->city;
+        // $save->zip = $request->zip;
+        // $save->address = $request->address; 
         $save->emergency_phone = $request->emergency_phone;
         $save->emergency_contact = $request->emergency_contact;
         $save->first_name = $request->first_name;
@@ -276,6 +284,11 @@ class UserController extends ApiController
             'full_name' => 'required|max:55',
             'email' => 'required|unique:students,email,'.$request->id,
             'phone' => 'required',
+            // 'state' => 'required',
+            // 'city' => 'required',
+            // 'zip' => 'required',
+
+           // 'address' => 'required',
             'emergency_phone' => 'required',
             'emergency_contact' => 'required',
             'first_name' => 'required',
@@ -293,6 +306,10 @@ class UserController extends ApiController
         $save->full_name = $request->full_name;
         $save->email = $request->email;
         $save->phone = $request->phone;
+        // $save->state = $request->state;
+        // $save->city = $request->city;
+        // $save->zip = $request->zip;
+        // $save->address = $request->address; 
         $save->emergency_phone = $request->emergency_phone;
         $save->emergency_contact = $request->emergency_contact;
         $save->first_name = $request->first_name;
@@ -318,6 +335,9 @@ class UserController extends ApiController
         $save->parent_id = $user->id;
         $save->save();
         $survey = Quiz::where("student_id",$save->id)->whereDate('created_at', Carbon::today())->first();
+
+        dd($save->id);
+        
         if ($survey){
             $save->survey = 1;
         }else{

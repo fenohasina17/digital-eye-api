@@ -1,0 +1,32 @@
+[28-Aug-2021 07:37:22 UTC] PHP Fatal error:  Cannot redeclare composerRequire5c2bc6110185ff820281243abcf40c91() (previously declared in /home/umm2021/public_html/vendor/composer/autoload_real.php:63) in /home/umm2021/public_html/api.mobilevideosystems.net/vendor/composer/autoload_real.php on line 70
+[28-Aug-2021 07:57:00 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home/umm2021/public_html/api.mobilevideosystems.net/vendor/autoload.php): failed to open stream: No such file or directory in /home/umm2021/public_html/app/Console/Commands/sendMessages.php:5
+Stack trace:
+#0 /home/umm2021/public_html/app/Console/Commands/sendMessages.php(5): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home/umm2021/p...', 5, Array)
+#1 /home/umm2021/public_html/app/Console/Commands/sendMessages.php(5): require_once()
+#2 /home/umm2021/public_html/vendor/composer/ClassLoader.php(444): include('/home/umm2021/p...')
+#3 /home/umm2021/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/umm2021/p...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Console\\Com...')
+#5 [internal function]: spl_autoload_call('App\\Console\\Com...')
+#6 /home/umm2021/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(229): is_subclass_of('App\\Console in /home/umm2021/public_html/app/Console/Commands/sendMessages.php on line 5
+[28-Aug-2021 07:57:00 UTC] PHP Fatal error:  main(): Failed opening required '/home/umm2021/public_html/api.mobilevideosystems.net/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/umm2021/public_html/app/Console/Commands/sendMessages.php on line 5
+[28-Aug-2021 07:57:45 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home/umm2021/public_html/api.mobilevideosystems.net/vendor/autoload.php): failed to open stream: No such file or directory in /home/umm2021/public_html/app/Console/Commands/sendMessages.php:5
+Stack trace:
+#0 /home/umm2021/public_html/app/Console/Commands/sendMessages.php(5): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home/umm2021/p...', 5, Array)
+#1 /home/umm2021/public_html/app/Console/Commands/sendMessages.php(5): require_once()
+#2 /home/umm2021/public_html/vendor/composer/ClassLoader.php(444): include('/home/umm2021/p...')
+#3 /home/umm2021/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/umm2021/p...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Console\\Com...')
+#5 [internal function]: spl_autoload_call('App\\Console\\Com...')
+#6 /home/umm2021/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(229): is_subclass_of('App\\Console in /home/umm2021/public_html/app/Console/Commands/sendMessages.php on line 5
+[28-Aug-2021 07:57:45 UTC] PHP Fatal error:  main(): Failed opening required '/home/umm2021/public_html/api.mobilevideosystems.net/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/umm2021/public_html/app/Console/Commands/sendMessages.php on line 5
+[02-Sep-2021 10:58:21 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home/umm2021/public_html/vendor/autoload.php): failed to open stream: Permission denied in /home/umm10/public_html/app/Console/Commands/sendMessages.php:5
+Stack trace:
+#0 /home/umm10/public_html/app/Console/Commands/sendMessages.php(5): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home/umm10/pub...', 5, Array)
+#1 /home/umm10/public_html/app/Console/Commands/sendMessages.php(5): require_once()
+#2 /home/umm10/public_html/vendor/composer/ClassLoader.php(444): include('/home/umm10/pub...')
+#3 /home/umm10/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/umm10/pub...')
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Console\\Com...')
+#5 [internal function]: spl_autoload_call('App\\Console\\Com...')
+#6 /home/umm10/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(229): is_subclass_of('App\\Console\\Com...', 'Illuminate\\Cons...')
+#7 /home/umm1 in /home/umm10/public_html/app/Console/Commands/sendMessages.php on line 5
+[02-Sep-2021 10:58:21 UTC] PHP Fatal error:  main(): Failed opening required '/home/umm2021/public_html/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/umm10/public_html/app/Console/Commands/sendMessages.php on line 5
