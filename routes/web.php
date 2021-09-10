@@ -310,6 +310,9 @@ Route::group([
 
 		Route::resource('video_preview', 'VideoPreviewController');
 
+
+		Route::any('notification', 'NotificationController@store')->name('notification');
+
 });
 
 
