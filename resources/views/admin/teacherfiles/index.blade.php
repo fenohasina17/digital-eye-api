@@ -1,6 +1,7 @@
 @extends('admin.layouts.master')
 @section('title',$title)
 @section('content')
+<<<<<<< HEAD
 <div class="">
         <ul class="nav nav-pills nav-fill" style="padding: 50px">
             <li class="nav-item">
@@ -37,6 +38,14 @@
         </li>
       </ul>
 </div>
+=======
+
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+>>>>>>> b97f45bfb816473ce02dc35b9aadd039b70fe1d2
 @endsection
 
 @section('scripts')

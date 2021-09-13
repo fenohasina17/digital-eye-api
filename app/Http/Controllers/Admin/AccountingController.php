@@ -14,7 +14,11 @@ class AccountingController extends Controller
      */
     public function index()
     {
+<<<<<<< HEAD
 	    $title = 'Video preview';
+=======
+	    $title = 'Behavior';
+>>>>>>> b97f45bfb816473ce02dc35b9aadd039b70fe1d2
 	    return view('admin.accounting.index',compact('title'));
     }
     //

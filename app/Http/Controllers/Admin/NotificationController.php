@@ -1,12 +1,10 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-
 require_once '/home/derrick/Documents/digital_api/public_html/vendor/autoload.php';
 use Twilio\Rest\Client; 
 use App\Models\User;
 use App\Models\check;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
@@ -19,7 +17,7 @@ class NotificationController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    
+
     {
         $checks = check::all();
 
@@ -101,5 +99,6 @@ class NotificationController extends Controller
         }
         
 
-    }
+
+
 }

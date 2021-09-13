@@ -44,6 +44,7 @@
             </select>
         </div>
       </li>
+<<<<<<< HEAD
       <li style="margin-left:800px; padding:20px;">
           <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -55,13 +56,44 @@
   </ul>
 
 
+=======
+
+  </ul>
+
+<div class="row" style="padding: 50px">
+    <div class="col-md-6">
+        <label for="show">Show:</label>
+        <select name="show" id="show" class="form-control">
+            <option value="10">20</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+    </div>
+    <div class="col-md-6" style="padding: 17px">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </div>
+
+</div>
+>>>>>>> b97f45bfb816473ce02dc35b9aadd039b70fe1d2
 
 <table class="table table-hover">
     <thead>
       <tr>
         <th scope="col">Good</th>
         <th scope="col">Average</th>
+<<<<<<< HEAD
         <th scope="col">Poor</th>
+=======
+        <th scope="col">Bad</th>
+>>>>>>> b97f45bfb816473ce02dc35b9aadd039b70fe1d2
         <th scope="col">Suspension</th>
         <th scope="col">Expulsion</th>    
 

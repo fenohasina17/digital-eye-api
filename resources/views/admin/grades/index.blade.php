@@ -29,7 +29,11 @@
 
 <div class="container-fluid">
     <h1>Grades</h1>
+<<<<<<< HEAD
     <h4>First Semester</h4>
+=======
+    <h4>First Semestre</h4>
+>>>>>>> b97f45bfb816473ce02dc35b9aadd039b70fe1d2
 <div class="container-fluid">
     <hr>
 </div>
@@ -43,7 +47,11 @@
             <th scope="col">VIEW ALL</th>
           </tr>
         </thead>
+<<<<<<< HEAD
         <!--<tbody>
+=======
+        <tbody>
+>>>>>>> b97f45bfb816473ce02dc35b9aadd039b70fe1d2
           <tr>
             <th scope="row">Math</th>
             <td>Mark</td>
@@ -64,7 +72,11 @@
             <td></td>
             <td><button class="btn btn-primary">VIEW ALL</button></td>
           </tr>
+<<<<<<< HEAD
         </tbody>-->
+=======
+        </tbody>
+>>>>>>> b97f45bfb816473ce02dc35b9aadd039b70fe1d2
       </table>
 
 </div>

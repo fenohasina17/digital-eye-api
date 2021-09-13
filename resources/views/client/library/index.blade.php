@@ -47,7 +47,11 @@
     <table class="table table-hover">
         <thead>
           <tr>
+<<<<<<< HEAD
             <th scope="col">BOOK</th>
+=======
+            <th scope="col">TYPE</th>
+>>>>>>> b97f45bfb816473ce02dc35b9aadd039b70fe1d2
             <th scope="col">NAME</th>
             <th scope="col">DESCRIPTION</th>
             <th scope="col">STATUS</th>
@@ -55,7 +59,45 @@
           </tr>
         </thead>
         <tbody>
+<<<<<<< HEAD
          
+=======
+          <tr>
+            <th scope="row">Virtual</th>
+            <td>Name of book</td>
+            <td>Description of the book</td>
+            <td>Avaliable</td>
+            <td><button class="btn btn-success">DOWNLOAD</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Normal</th>
+            <td>Name of book</td>
+            <td>Description of the book</td>
+            <td>Avaliable</td>
+            <td><button class="btn btn-success">DOWNLOAD</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Virtual</th>
+            <td>Name of book</td>
+            <td>Description of the book</td>
+            <td>Avaliable</td>
+            <td><button class="btn btn-success">DOWNLOAD</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Virtual</th>
+            <td>Name of book</td>
+            <td>Description of the book</td>
+            <td>Avaliable</td>
+            <td><button class="btn btn-success">DOWNLOAD</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Virtual</th>
+            <td>Name of book</td>
+            <td>Description of the book</td>
+            <td>Avaliable</td>
+            <td><button class="btn btn-success">DOWNLOAD</button></td>
+          </tr>
+>>>>>>> b97f45bfb816473ce02dc35b9aadd039b70fe1d2
         </tbody>
       </table>
     

@@ -76,12 +76,16 @@ class MdtController extends Controller
                 ])
 				->count();
 		}
-
+        var_dump($users);
 
 		$data = array();
 
 		if($users){
 			foreach($users as $r){
+<<<<<<< HEAD
+=======
+
+>>>>>>> b97f45bfb816473ce02dc35b9aadd039b70fe1d2
 				$edit_url = route('mdts.edit',$r->id);
 				$nestedData['id'] = '<td><label class="checkbox checkbox-outline checkbox-success"><input type="checkbox" name="mdts[]" value="'.$r->id.'"><span></span></label></td>';
 				$nestedData['name'] = $r->name;

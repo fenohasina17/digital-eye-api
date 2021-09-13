@@ -15,7 +15,11 @@ class TeacherfilesController extends Controller
     public function index()
     {
 	    $title = 'Behavior';
+<<<<<<< HEAD
 	    return view('admin.teacherfiles.index',compact('title'));
+=======
+	    return view('admin.behavior.index',compact('title'));
+>>>>>>> b97f45bfb816473ce02dc35b9aadd039b70fe1d2
     }
     //
 

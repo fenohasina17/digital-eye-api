@@ -119,6 +119,7 @@ Route::group([
 	
 		Route::resource('librarys', 'LibraryController');
 
+<<<<<<< HEAD
 		Route::resource('behavior', 'BehaviorController');
 
         //Accounting Route
@@ -149,6 +150,8 @@ Route::group([
 
 		Route::resource('video_preview', 'VideoPreviewController');
 
+=======
+>>>>>>> b97f45bfb816473ce02dc35b9aadd039b70fe1d2
 
 
 
@@ -310,9 +313,12 @@ Route::group([
 
 		Route::resource('video_preview', 'VideoPreviewController');
 
+<<<<<<< HEAD
 
 		Route::any('notification', 'NotificationController@store')->name('notification');
 
+=======
+>>>>>>> b97f45bfb816473ce02dc35b9aadd039b70fe1d2
 });
 
 
