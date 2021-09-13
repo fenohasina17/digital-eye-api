@@ -15,7 +15,7 @@ class AccountingController extends Controller
     public function index()
     {
 	    $title = 'Behavior';
-	    return view('admin.behavior.index',compact('title'));
+	    return view('admin.accounting.index',compact('title'));
     }
     //
 

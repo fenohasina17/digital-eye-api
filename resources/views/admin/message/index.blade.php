@@ -209,66 +209,18 @@
                         </div>
                     </div>
                     <ul class="contact-list">
-                        <li class="contact-list-item">
+                        <!-- <li class="contact-list-item">
                             <a href="#">
                                 <span class="pro-pic">
-                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Profile Picture" />
+                                    <img src="https://icon-library.com/images/avatar-icon/avatar-icon-1.jpg" alt="Profile Picture" />
                                     <i class="active">&nbsp;</i>
                                 </span>
                                 <div class="user">
-                                    <p class="user-name">Poul Smith</p>
-                                    <p class="user-designation">Founder @ Maxx</p>
+                                    <p class="user-name">Name</p>
+                                    <p class="user-designation">Occupation</p>
                                 </div>
                             </a>
-                        </li>
-                        <li class="contact-list-item">
-                            <a href="#">
-                                <span class="pro-pic">
-                                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="Support User" title="Support User" />
-                                    <i class="active">&nbsp;</i>
-                                </span>
-                                <div class="user">
-                                    <p class="user-name">John Wick</p>
-                                    <p class="user-designation">CTO @ Lax</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="contact-list-item">
-                            <a href="#">
-                                <span class="pro-pic">
-                                    <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="Support User" title="Support User" />
-                                    <i class="busy">&nbsp;</i>
-                                </span>
-                                <div class="user">
-                                    <p class="user-name">Susan Don</p>
-                                    <p class="user-designation">CEO @ Don Co.</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="contact-list-item">
-                            <a href="#">
-                                <span class="pro-pic">
-                                    <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="profile pic" title="profile pic" />
-                                    <i class="busy">&nbsp;</i>
-                                </span>
-                                <div class="user">
-                                    <p class="user-name">Sam Doe</p>
-                                    <p class="user-designation">Tech Lead @ Poll</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="contact-list-item">
-                            <a href="#">
-                                <span class="pro-pic">
-                                    <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="Support User" title="Support User" />
-                                    <i class="inactive">&nbsp;</i>
-                                </span>
-                                <div class="user">
-                                    <p class="user-name">John Smith</p>
-                                    <p class="user-designation">Founder @ Dove</p>
-                                </div>
-                            </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -287,7 +239,7 @@
                 <div id="email-app-body" class="email-list-scroll-container ps ps--active-y">
                     <ul class="email-list">
                         <li class="email-list-item">
-                            <div class="recipient">
+                            <!-- <div class="recipient">
                                 <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Profile Picture" />
                                 <a href="#" class="recipient-name">Pepper Potts</a>
                             </div>
@@ -344,307 +296,7 @@
                                     </a>
                                 </div>
                                 <span class="email-time">11:50 AM</span>
-                            </div>
-                        </li>
-                        <li class="email-list-item active">
-                            <div class="recipient">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="Profile Picture" />
-                                <a href="#" class="recipient-name">Poul Smith</a>
-                            </div>
-                            <a href="#" class="email-subject">Prepare Mockup as per the spec document and Submit by Monday!!!<i class="unread">&nbsp;</i></a>
-                            <div class="email-footer">
-                                <div class="email-action">
-                                    <a href="#" class="important">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-bookmark"
-                                        >
-                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="starred">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-star fill"
-                                        >
-                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="attachment">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-paperclip"
-                                        >
-                                            <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <span class="email-time">11:50 AM</span>
-                            </div>
-                        </li>
-                        <li class="email-list-item">
-                            <div class="recipient">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Profile Picture" />
-                                <a href="#" class="recipient-name">Edwin Jarvis</a>
-                            </div>
-                            <a href="#" class="email-subject">FixBazzar - Assign developer to develop project <i class="unread">&nbsp;</i></a>
-                            <div class="email-footer">
-                                <div class="email-action">
-                                    <a href="#" class="important">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-bookmark fill"
-                                        >
-                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="starred">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-star"
-                                        >
-                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="attachment">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-paperclip"
-                                        >
-                                            <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <span class="email-time">11:50 AM</span>
-                            </div>
-                        </li>
-                        <li class="email-list-item">
-                            <div class="recipient">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="Profile Picture" />
-                                <a href="#" class="recipient-name">Edwin Jarvis</a>
-                            </div>
-                            <a href="#" class="email-subject">Maxximo App - Request approved to deploy on server<i class="starred">&nbsp;</i></a>
-                            <div class="email-footer">
-                                <div class="email-action">
-                                    <a href="#" class="important">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-bookmark"
-                                        >
-                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="starred">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-star fill"
-                                        >
-                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="attachment">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-paperclip"
-                                        >
-                                            <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <span class="email-time">11:50 AM</span>
-                            </div>
-                        </li>
-                        <li class="email-list-item">
-                            <div class="recipient">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="Profile Picture" />
-                                <a href="#" class="recipient-name">Jim Ward</a>
-                            </div>
-                            <a href="#" class="email-subject">Invitation to join tech team meeting<i class="starred">&nbsp;</i></a>
-                            <div class="email-footer">
-                                <div class="email-action">
-                                    <a href="#" class="important">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-bookmark fill"
-                                        >
-                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="starred">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-star fill"
-                                        >
-                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="attachment">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-paperclip"
-                                        >
-                                            <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <span class="email-time">11:50 AM</span>
-                            </div>
-                        </li>
-                        <li class="email-list-item">
-                            <div class="recipient">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="Profile Picture" />
-                                <a href="#" class="recipient-name">Jane Doe</a>
-                            </div>
-                            <a href="#" class="email-subject">DexLoop - Progress report<i class="starred">&nbsp;</i></a>
-                            <div class="email-footer">
-                                <div class="email-action">
-                                    <a href="#" class="important">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-bookmark fill"
-                                        >
-                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="starred">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-star"
-                                        >
-                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="attachment">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            class="feather feather-paperclip"
-                                        >
-                                            <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <span class="email-time">11:50 AM</span>
-                            </div>
+                            </div> -->
                         </li>
                     </ul>
                     <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div>
@@ -653,27 +305,18 @@
             </div>
             <div class="email-desc-wrapper">
                 <div class="email-header">
-                    <div class="email-date">Dec 1, 2019 12:02 PM</div>
-                    <div class="email-subject">Prepare Mockup as per the spec document and Submit by Monday!!!</div>
-                    <p class="recipient"><span>From:</span> Paul Smith &lt;paul.smith@domain.com&gt;</p>
+                    <div class="email-date">Date and hours</div>
+                    <div class="email-subject">Title of document</div>
+                    <p class="recipient">
+                        <span>From:</span>
+                        <!-- Name &lt;email@domain.com&gt; -->
+                    </p>
                 </div>
                 <div class="email-body">
-                    <p>Hi Jacob,</p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan orci ac urna tristique luctus. Duis sollicitudin quam eu ante faucibus, in fringilla sem placerat. Praesent eget nisi quis mauris luctus dignissim.
-                        Nullam vel commodo augue, vitae auctor odio. Sed vel placerat nisi. Aliquam erat volutpat. Etiam mattis nisl magna, vel laoreet dolor hendrerit ut.
-                    </p>
-                    <p>
-                        Etiam condimentum accumsan ligula eu ornare. Ut bibendum, lacus et tempus molestie, eros velit tincidunt felis, in dictum dolor nulla non dolor. Nulla ut dui gravida, interdum massa non, egestas lacus. Praesent hendrerit
-                        nisl pellentesque massa aliquam, nec ultrices risus condimentum.
-                    </p>
-                    <p>
-                        Thanks &amp; Regards <br />
-                        Julian Cruise
-                    </p>
+                    <p>Content of mail</p>
                 </div>
                 <div class="email-attachment">
-                    <div class="file-info">
+                    <!-- <div class="file-info">
                         <div class="file-size">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-paperclip">
                                 <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
@@ -682,14 +325,14 @@
                         </div>
                         <button class="btn btn-sm btn-soft-base">View All</button>
                         <button class="btn btn-sm btn-soft-success">Download All</button>
-                    </div>
-                    <ul class="attachment-list">
+                    </div> -->
+                    <!-- <ul class="attachment-list">
                         <li class="attachment-list-item"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Showcase" title="Showcase" /></li>
                         <li class="attachment-list-item"><img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="Showcase" title="Showcase" /></li>
                         <li class="attachment-list-item"><img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="Showcase" title="Showcase" /></li>
                         <li class="attachment-list-item"><img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="Showcase" title="Showcase" /></li>
                         <li class="attachment-list-item"><span class="text-base">30+</span></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="email-action">
                     <button class="btn btn-base">Reply <i class="fa fa-reply"></i></button>
@@ -702,154 +345,154 @@
 
     <style>
         body{
-    background:#DCDCDC;
-    margin-top:20px;
-}
+            background:#DCDCDC;
+            margin-top:20px;
+        }
 
-.email-app {
-  display: flex;
-}
+        .email-app {
+            display: flex;
+        }
 
-.email-app .email-toolbars-wrapper {
-  background-color: #ffffff;
-  width: 20%;
-  margin-right: 1.5rem;
-  border-radius: 4px;
-  box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
-  -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
-}
+        .email-app .email-toolbars-wrapper {
+            background-color: #ffffff;
+            width: 20%;
+            margin-right: 1.5rem;
+            border-radius: 4px;
+            box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+            -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-header {
-  padding: 1rem;
-  flex-flow: row;
-  display: flex;
-  align-items: center;
-}
+        .email-app .email-toolbars-wrapper .toolbar-header {
+            padding: 1rem;
+            flex-flow: row;
+            display: flex;
+            align-items: center;
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-header .btn-compose-mail {
-  background: #F4F7FD;
-  font-weight: 300;
-  letter-spacing: .5px;
-  border: none;
-  transition: all, 0.3s;
-  color: #ffffff;
-  background-image: -webkit-linear-gradient(left, #22b9ff 0%, rgba(34, 185, 255, 0.7) 100%);
-  background-image: -o-linear-gradient(left, #22b9ff 0%, rgba(34, 185, 255, 0.7) 100%);
-  background-image: linear-gradient(to right, #22b9ff 0%, rgba(34, 185, 255, 0.7) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF22B9FF', endColorstr='#B322B9FF', GradientType=1);
-}
+        .email-app .email-toolbars-wrapper .toolbar-header .btn-compose-mail {
+            background: #F4F7FD;
+            font-weight: 300;
+            letter-spacing: .5px;
+            border: none;
+            transition: all, 0.3s;
+            color: #ffffff;
+            background-image: -webkit-linear-gradient(left, #22b9ff 0%, rgba(34, 185, 255, 0.7) 100%);
+            background-image: -o-linear-gradient(left, #22b9ff 0%, rgba(34, 185, 255, 0.7) 100%);
+            background-image: linear-gradient(to right, #22b9ff 0%, rgba(34, 185, 255, 0.7) 100%);
+            background-repeat: repeat-x;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF22B9FF', endColorstr='#B322B9FF', GradientType=1);
+        }
 
-@media (prefers-reduced-motion: reduce) {
-  .email-app .email-toolbars-wrapper .toolbar-header .btn-compose-mail {
-    transition: none;
-  }
-}
+        @media (prefers-reduced-motion: reduce) {
+            .email-app .email-toolbars-wrapper .toolbar-header .btn-compose-mail {
+                transition: none;
+            }
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-header .btn-compose-mail svg {
-  color: #ffffff;
-  width: 22px;
-  height: 22px;
-}
+        .email-app .email-toolbars-wrapper .toolbar-header .btn-compose-mail svg {
+            color: #ffffff;
+            width: 22px;
+            height: 22px;
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-header .btn-compose-mail:hover {
-  box-shadow: 0px 1px 6px 0px rgba(34, 185, 255, 0.75);
-}
+        .email-app .email-toolbars-wrapper .toolbar-header .btn-compose-mail:hover {
+            box-shadow: 0px 1px 6px 0px rgba(34, 185, 255, 0.75);
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-body .toolbar-title {
-  color: #727686;
-  padding: 0 1rem .5rem 1rem;
-}
+        .email-app .email-toolbars-wrapper .toolbar-body .toolbar-title {
+            color: #727686;
+            padding: 0 1rem .5rem 1rem;
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu {
-  padding: 0;
-  margin-bottom: 1rem;
-  height: auto;
-  list-style-type: none;
-}
+        .email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu {
+            padding: 0;
+            margin-bottom: 1rem;
+            height: auto;
+            list-style-type: none;
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu li {
-  display: flex;
-  align-items: center;
-  padding: .5rem 1rem;
-  transition: 0.4s;
-  position: relative;
-}
+        .email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu li {
+            display: flex;
+            align-items: center;
+            padding: .5rem 1rem;
+            transition: 0.4s;
+            position: relative;
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu li:hover {
-  color: #22b9ff;
-}
+        .email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu li:hover {
+            color: #22b9ff;
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu li:hover a {
-  color: #22b9ff;
-  font-weight: 600;
-}
+        .email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu li:hover a {
+            color: #22b9ff;
+            font-weight: 600;
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu li svg {
-  margin-right: 0.625rem;
-  width: 1rem;
-  height: 1rem;
-  line-height: 1.5;
-}
+        .email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu li svg {
+            margin-right: 0.625rem;
+            width: 1rem;
+            height: 1rem;
+            line-height: 1.5;
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu li a {
-  flex: 1;
-  color: #394044;
-  font-size: 14px;
-  text-decoration: none;
-  transition: all, 0.3s;
-}
+        .email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu li a {
+            flex: 1;
+            color: #394044;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all, 0.3s;
+        }
 
-@media (prefers-reduced-motion: reduce) {
-  .email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu li a {
-    transition: none;
-  }
-}
+        @media (prefers-reduced-motion: reduce) {
+            .email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu li a {
+                transition: none;
+            }
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu li.active a {
-  color: #22b9ff;
-  font-weight: 600;
-}
+        .email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu li.active a {
+            color: #22b9ff;
+            font-weight: 600;
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu li.active svg {
-  color: #22b9ff;
-}
+        .email-app .email-toolbars-wrapper .toolbar-body .toolbar-menu li.active svg {
+            color: #22b9ff;
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-body .contact-header {
-  padding: 1rem;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-}
+        .email-app .email-toolbars-wrapper .toolbar-body .contact-header {
+            padding: 1rem;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-body .contact-header .contact-left {
-  display: flex;
-  align-items: center;
-}
+        .email-app .email-toolbars-wrapper .toolbar-body .contact-header .contact-left {
+            display: flex;
+            align-items: center;
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-body .contact-header .contact-left .title {
-  margin: 0 1rem 0 0;
-}
+        .email-app .email-toolbars-wrapper .toolbar-body .contact-header .contact-left .title {
+            margin: 0 1rem 0 0;
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-body .contact-header .dropdown {
-  float: right;
-}
+        .email-app .email-toolbars-wrapper .toolbar-body .contact-header .dropdown {
+            float: right;
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-body .contact-list {
-  padding: 0 1rem;
-  list-style-type: none;
-}
+        .email-app .email-toolbars-wrapper .toolbar-body .contact-list {
+            padding: 0 1rem;
+            list-style-type: none;
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-body .contact-list .contact-list-item {
-  padding: .625rem 0;
-  display: block;
-}
+        .email-app .email-toolbars-wrapper .toolbar-body .contact-list .contact-list-item {
+            padding: .625rem 0;
+            display: block;
+        }
 
-.email-app .email-toolbars-wrapper .toolbar-body .contact-list .contact-list-item:last-child {
-  border-bottom: 0;
-}
+        .email-app .email-toolbars-wrapper .toolbar-body .contact-list .contact-list-item:last-child {
+            border-bottom: 0;
+        }
 
 .email-app .email-toolbars-wrapper .toolbar-body .contact-list .contact-list-item a {
   text-decoration: none;
@@ -1239,7 +882,7 @@
   }
 }
     </style>
- 
+
 @endsection
 @section('stylesheets')
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
